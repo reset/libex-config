@@ -5,22 +5,28 @@ defmodule LibEx.Config.Mixfile do
     [app: :libex_config,
      version: "0.1.0",
      elixir: "~> 0.12",
+     description: description,
+     package: package,
      deps: deps]
   end
 
-  # Configuration for the OTP application
-  #
-  # Type `mix help compile.app` for more information
   def application do
     [ applications: [] ]
   end
 
-  # List all dependencies in the format:
-  #
-  # {:foobar, git: "https://github.com/elixir-lang/foobar.git", tag: "0.1"}
-  #
-  # Type `mix help deps` for more examples and options
   defp deps do
     []
+  end
+
+  defp description do
+    """
+    LibEx.Config exposes helpers around accessing OTP application configuration.
+    """
+  end
+
+  defp package do
+    [ contributors: ["Jamie Winsor"],
+      licenses: ["Apache 2.0"],
+      links: %{"GitHub" => "https://github.com/reset/libex-config"} ]
   end
 end
