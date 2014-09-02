@@ -4,7 +4,7 @@ defmodule LibEx.Config.Mixfile do
   def project do
     [app: :libex_config,
      version: "0.1.1",
-     elixir: "~> 0.12",
+     elixir: "~> 0.15.0 or ~> 1.0.0-rc1",
      description: description,
      package: package,
      deps: deps]
